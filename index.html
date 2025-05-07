@@ -6,60 +6,71 @@
   <title>Status – Crece tus Finanzas</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"/>
 </head>
-<body class="bg-gray-100 font-sans">
+<body class="bg-gray-100 font-sans text-gray-800">
 
-  <header class="bg-white shadow-md">
+  <!-- Header -->
+  <header class="bg-white shadow-md sticky top-0 z-50">
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
       <h1 class="text-2xl font-bold text-indigo-600">Status</h1>
-      <nav>
-        <a href="https://youngnigth.github.io/Landing/" class="text-gray-600 hover:text-indigo-600 mx-2">Inicio</a>
-        <a href="#features" class="text-gray-600 hover:text-indigo-600 mx-2">Beneficios</a>
-        <a href="#register" class="text-white bg-indigo-600 px-4 py-2 rounded-full hover:bg-indigo-700">Regístrate</a>
+      <nav class="flex space-x-4">
+        <a href="https://youngnigth.github.io/Landing/" class="text-gray-600 hover:text-indigo-600 transition">Inicio</a>
+        <a href="#features" class="text-gray-600 hover:text-indigo-600 transition">Beneficios</a>
+        <a href="#register" class="text-white bg-indigo-600 px-4 py-2 rounded-full hover:bg-indigo-700 transition">Regístrate</a>
       </nav>
     </div>
   </header>
 
-  <section class="text-center py-16 px-6 bg-indigo-50">
-    <h2 class="text-4xl font-bold text-indigo-700">Mejora tus Finanzas Personales</h2>
-    <p class="mt-4 text-gray-700 text-lg max-w-xl mx-auto">
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 bg-indigo-50">
+    <h2 class="text-4xl md:text-5xl font-bold text-indigo-700">Mejora tus Finanzas Personales</h2>
+    <p class="mt-6 text-gray-700 text-lg max-w-xl mx-auto">
       Únete a <strong>Status</strong> y toma el control de tu economía personal. Diseñado para apoyar a personas en países en desarrollo que desean crecer financieramente.
     </p>
-    <a href="#register" class="mt-6 inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-lg hover:bg-indigo-700">Comienza Gratis</a>
+    <a href="#register" class="mt-8 inline-block bg-indigo-600 text-white px-6 py-3 rounded-full text-lg hover:bg-indigo-700 transition">Comienza Gratis</a>
   </section>
 
-  <section id="features" class="py-16 px-6 bg-white">
-    <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-      <div>
-        <h3 class="text-xl font-semibold text-indigo-600">Educación Financiera</h3>
-        <p class="text-gray-600 mt-2">Contenido accesible para entender cómo ahorrar, invertir y evitar deudas.</p>
-      </div>
-      <div>
-       <h3 class="text-xl font-semibold text-indigo-600"> <a href="https://youngnigth.github.io/Tool/">Herramientas Digitales</a></h3> 
-        <p class="text-gray-600 mt-2">Calculadoras, presupuestos y seguimiento de gastos al alcance de tu celular.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold text-indigo-600"><a href="https://youngnigth.github.io/YD/index.html"> Comunidad</a></h3>
-        <p class="text-gray-600 mt-2">Conecta con otros usuarios que también están construyendo un futuro sólido.</p>
-    
-      </div>
+<!-- Features Section -->
+<section id="features" class="py-20 px-6 bg-white">
+  <div class="max-w-6xl mx-auto grid sm:grid-cols-2 md:grid-cols-2 gap-10 text-center">
+    <div>
+      <h3 class="text-xl font-semibold text-indigo-600">
+        <a href="https://youngnigth.github.io/YD/index.html" target="_blank">Educación Financiera</a>
+      </h3>
+      <p class="text-gray-600 mt-3">Contenido accesible para entender cómo ahorrar, invertir y evitar deudas.</p>
     </div>
-  </section>
+    <div>
+      <h3 class="text-xl font-semibold text-indigo-600">
+        <a href="https://youngnigth.github.io/Tool/" target="_blank">Herramientas Digitales</a>
+      </h3>
+      <p class="text-gray-600 mt-3">Calculadoras, presupuestos y seguimiento de gastos al alcance de tu celular.</p>
+    </div>
+  </div>
+</section>
 
-  <section id="register" class="py-16 px-6 bg-gray-100">
-    <div class="max-w-xl mx-auto bg-white p-8 rounded-xl shadow-md">
-      <h2 class="text-2xl font-bold text-indigo-700 text-center mb-6">Regístrate Gratis</h2>
+  <!-- Register Section -->
+  <section id="register" class="py-20 px-6 bg-gray-100">
+    <div class="max-w-xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+      <h2 class="text-3xl font-bold text-indigo-700 text-center mb-6">Regístrate Gratis</h2>
       <form action="#" method="POST" class="space-y-4">
-        <input type="text" placeholder="Nombre completo" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
-        <input type="email" placeholder="Correo electrónico" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
-        <input type="password" placeholder="Contraseña" required class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
-        <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700">Crear Cuenta</button>
+        <input type="text" placeholder="Nombre completo" required class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
+        <input type="email" placeholder="Correo electrónico" required class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
+        <input type="password" placeholder="Contraseña" required class="w-full px-4 py-3 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"/>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-3 rounded-md hover:bg-indigo-700 transition">Crear Cuenta</button>
       </form>
-      <p class="text-center text-sm text-gray-500 mt-4">Ya tienes una cuenta? <a href="https://youngnigth.github.io/login/index.html#register" class="text-indigo-600 hover:underline">Inicia sesión</a></p>
+      <p class="text-center text-sm text-gray-500 mt-6">
+        ¿Ya tienes una cuenta? 
+        <a href="https://youngnigth.github.io/login/index.html#register" class="text-indigo-600 hover:underline">Inicia sesión</a>
+      </p>
     </div>
   </section>
 
-  <footer class="bg-white border-t py-6 text-center text-gray-600">
-    © 2025 Status. Todos los derechos reservados.
+  <!-- Footer -->
+  <footer class="bg-white border-t py-8 text-center text-sm text-gray-600">
+    <p>© 2025 Status. Todos los derechos reservados.</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="hover:text-indigo-600 transition">Política</a>
+      <a href="#" class="hover:text-indigo-600 transition">Soporte</a>
+    </div>
   </footer>
 
 </body>
